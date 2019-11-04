@@ -7,6 +7,20 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [countHome, setCountHome] = useState(0);
   const [countAway, setCountAway] = useState(0);
+
+  const homeTeamTouchdown = () => {
+    homeTeamTouchdown(countHome + 7);
+  };
+  const homeTeamFieldgoal = () => {
+    homeTeamFieldgoal(countHome + 3);
+  };
+
+  const awayTeamTouchdown = () => {
+    awayTeamTouchdown(countAway + 7);
+  };
+  const awayTeamFieldgoal = () => {
+    awayTeamFieldgoal(countAway + 3);
+  };
   return (
     <div className='container'>
       <section className='scoreboard'>
