@@ -48,11 +48,26 @@ function App() {
           >
             Home Touchdown
           </button>
-          <button className='homeButtons__fieldGoal'>Home Field Goal</button>
+          <button
+            className='homeButtons__fieldGoal'
+            onClick={homeTeamFieldgoal}
+          >
+            Home Field Goal
+          </button>
         </div>
         <div className='awayButtons'>
-          <button className='awayButtons__touchdown'>Away Touchdown</button>
-          <button className='awayButtons__fieldGoal'>Away Field Goal</button>
+          <button
+            className='awayButtons__touchdown'
+            onClick={awayTeamTouchdown}
+          >
+            Away Touchdown
+          </button>
+          <button
+            className='awayButtons__fieldGoal'
+            onClick={awayTeamFieldgoal}
+          >
+            Away Field Goal
+          </button>
         </div>
       </section>
     </div>
